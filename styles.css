@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0e0e0e;
+    color: #ddc4a4;
+    min-height: 200vh; /* For scrolling */
+    font-family: "Space Grotesk", sans-serif;
+  
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    padding: 1.5rem 2rem;
+    margin-top: 50vh; /* Add some space at top */
+}
+
+.content__title {
+    font-size: 10vw;
+    line-height: 0.8;
+    font-weight: 400;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+    opacity: 1; /* Ensure visibility */
+}
+
+.content__title--left {
+    text-align: left;
+}
+
+.font-medium {
+    font-size: 5vw;
+    margin-top: 3rem;
+}
+
+.font-height-medium {
+    line-height: 1.4; /* Increased line height for better readability */
+}
+
+/* Ensure characters are visible */
+.splitting .char {
+    display: inline-block;
+    opacity: 1;
+}
